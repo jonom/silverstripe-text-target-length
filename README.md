@@ -40,6 +40,10 @@ $field->setTargetLength(100, 25, 150);
 $field->setTargetLength(50*6);
 ```
 
+### Customise hint text
+
+This module supports translation through yml, so if you want to change the hint text that is displayed when users are typing, just create your own language file to override the one included in the module.
+
 ## Want to see more like this?
 
 I donate a lot of my time to open-source projects, so if you use this module in a commercial project a small donation to keep me motivated would be much appreciated. If you'd like to sponsor additional development on this module I'd love to hear from you.
