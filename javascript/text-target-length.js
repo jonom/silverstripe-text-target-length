@@ -13,20 +13,20 @@
 				var min = field.data('targetMinLength');
 				var max = field.data('targetMaxLength');
 				var targetFulfilled = Math.round((charCount / ideal)*20)*5; //5% increments
-				var remark = 'Great!';
+				var remark = field.data('hintLengthIdeal');
 				var remarkClass = 'good';
                 if ((charCount >= min && charCount < ((min + ideal) / 2)) || (charCount <= max && charCount > ((max + ideal) / 2))) {
-                    remark = 'Okay';
+                    remark = field.data('hintLengthAdequate');
 				} else if (charCount < min) {
-    				remark = 'Keep going!';
+    				remark = field.data('hintLengthTooshort');
                     remarkClass = 'under';
                     if (charCount === 0) remark = '';
 				} else if (charCount > max) {
-    				remark = 'Too long'
+    				remark = field.data('hintLengthToolong');
                     remarkClass = 'over';
 				}
 				countEl.attr('class', remarkClass + ' target-length-count');
-				countEl.html('Length target: <b>' + targetFulfilled + '%</b> <i>' + remark + '</i>');
+				countEl.html(field.data('hintLengthTarget').replace('{value}', targetFulfilled).replace('{remark}', remark));
 				field.data('previousCount', charCount);
 			},
 			getText: function() {
