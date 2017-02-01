@@ -1,0 +1,7 @@
+hr:
+  TextTargetLength:
+    LengthTarget: "Ciljana dužina: <b>{value}%</b> <i>{remark}</i>"
+    LengthTooShort: "Nastavite pisati!"
+    LengthTooLong: "Predugo"
+    LengthAdequate: "Dobro"
+    LengthIdeal: "Odlično!"
