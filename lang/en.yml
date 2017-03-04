@@ -1,6 +1,6 @@
 en:
   TextTargetLength:
-    LengthTarget: "Length target: <b>{value}%</b> <i>{remark}</i>"
+    LengthTarget: "Character count: <b>{count}</b>. Percentage-wise: <b>{value}%</b> <i>{remark}</i>"
     LengthTooShort: "Keep going!"
     LengthTooLong: "Too long"
     LengthAdequate: "Okay"
