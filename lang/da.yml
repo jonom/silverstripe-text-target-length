@@ -1,0 +1,7 @@
+da:
+  TextTargetLength:
+    LengthTarget: "Antal tegn: <b>{count}</b>. Procentvis: <b>{value}%</b> <i>{remark}</i>"
+    LengthTooShort: "Du er under målet"
+    LengthTooLong: "Du er over målet"
+    LengthAdequate: "Okay"
+    LengthIdeal: "Perfekt!"
