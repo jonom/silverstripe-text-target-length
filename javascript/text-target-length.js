@@ -26,7 +26,7 @@
                     remarkClass = 'over';
 				}
 				countEl.attr('class', remarkClass + ' target-length-count');
-				countEl.html(field.data('hintLengthTarget').replace('{value}', targetFulfilled).replace('{remark}', remark));
+				countEl.html(field.data('hintLengthTarget').replace('{count}', charCount).replace('{value}', targetFulfilled).replace('{remark}', remark));
 				field.data('previousCount', charCount);
 			},
 			getText: function() {
