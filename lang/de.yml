@@ -1,0 +1,7 @@
+de:
+  TextTargetLength:
+    LengthTarget: "Textlänge: <b>{value}%</b> <i>{remark}</i>"
+    LengthTooShort: "der optimalen Länge"
+    LengthTooLong: "zu lange"
+    LengthAdequate: "nahezu optimal"
+    LengthIdeal: "optimal"
