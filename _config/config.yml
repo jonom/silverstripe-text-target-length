@@ -1,12 +1,12 @@
 ---
 Name: text-target-length
 ---
-TextField:
+SilverStripe\Forms\TextareaField:
   extensions:
-    - TextTargetLengthExtension
-TextareaField:
+    - JonoM\SilverStripeTextTargetLength\TextTargetLengthExtension
+SilverStripe\Forms\TextareaField:
   extensions:
-    - TextTargetLengthExtension
-HTMLEditorField:
+    - JonoM\SilverStripeTextTargetLength\TextTargetLengthExtension
+SilverStripe\Forms\HTMLEditor\HTMLEditorField:
   extensions:
-    - TextTargetLengthExtension
+    - JonoM\SilverStripeTextTargetLength\TextTargetLengthExtension

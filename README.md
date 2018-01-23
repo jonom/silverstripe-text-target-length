@@ -8,17 +8,13 @@ This module extends the `TextField`, `TextareaField` and `HTMLEditorField` class
 
 ## Requirements
 
-SilverStripe 3.1+ (3.3 tested)
+SilverStripe 4.0+ (3.1+ in previous releases)
 
 ## Installation
 
 ### Composer (best practice)
 
 [Packagist listing](https://packagist.org/packages/jonom/silverstripe-text-target-length) and [installation instructions](http://doc.silverstripe.org/framework/en/trunk/installation/composer#adding-modules-to-your-project)
-
-### Manually
-
-I promise it's worth your time to learn how to use Composer. If painless updating isn't your thing though you can download and extract this project, rename the module folder 'text-target-length', place it in your project root and run a dev/build?flush=1.
 
 ## How to use
 
