@@ -1,17 +1,24 @@
 {
-	"name": "jonom/silverstripe-text-target-length",
-	"description": "Set character length recommendations on SilverStripe text form fields",
-	"type": "silverstripe-module",
-	"keywords": ["silverstripe", "textfield", "textareafield", "target"],
-	"license": "BSD-3-Clause",
-	"authors": [{
-		"name": "Jonathon Menz",
-		"homepage": "http://jonathonmenz.com"
-	}],
-	"require": {
-		"silverstripe/framework": "^3.1"
-	},
-	"extra": {
-		"installer-name": "text-target-length"
-	}
+    "name": "jonom/silverstripe-text-target-length",
+    "description": "Set character length recommendations on SilverStripe text form fields",
+    "type": "silverstripe-vendormodule",
+    "keywords": ["silverstripe", "textfield", "textareafield", "target"],
+    "license": "BSD-3-Clause",
+    "authors": [{
+        "name": "Jonathon Menz",
+        "homepage": "http://jonathonmenz.com"
+    }],
+    "require": {
+        "silverstripe/framework": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "JonoM\\SilverStripeTextTargetLength\\": "src/"
+        }
+    },
+    "extra": {
+        "expose": [
+            "client"
+        ]
+    }
 }
