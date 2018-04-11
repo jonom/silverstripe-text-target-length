@@ -1,7 +1,7 @@
 ---
 Name: text-target-length
 ---
-SilverStripe\Forms\TextareaField:
+SilverStripe\Forms\TextField:
   extensions:
     - JonoM\SilverStripeTextTargetLength\TextTargetLengthExtension
 SilverStripe\Forms\TextareaField:
