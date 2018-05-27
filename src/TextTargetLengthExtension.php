@@ -45,8 +45,6 @@ class TextTargetLengthExtension extends Extension
         $field->setAttribute('data-hint-length-adequate', _t('TextTargetLength.LengthAdequate', 'Okay'));
         $field->setAttribute('data-hint-length-ideal', _t('TextTargetLength.LengthIdeal', 'Great!'));
 
-        Requirements::javascript('silverstripe/admin:thirdparty/jquery/jquery.js');
-        Requirements::javascript('silverstripe/admin:thirdparty/jquery-entwine/dist/jquery.entwine-dist.js');
         Requirements::javascript('jonom/silverstripe-text-target-length:client/javascript/text-target-length.js');
         Requirements::css('jonom/silverstripe-text-target-length:client/css/text-target-length.css');
 
