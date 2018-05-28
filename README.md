@@ -40,6 +40,15 @@ $field->setTargetLength(50*6);
 
 This module supports translation through yml, so if you want to change the hint text that is displayed when users are typing, just create your own language file to override the one included in the module.
 
+### Front-end use
+
+If you want to use this module outside of the CMS, you will need to load a copy of jQuery and jQuery Entwine in to the page. Example:
+
+```php
+Requirements::javascript('silverstripe/admin:thirdparty/jquery/jquery.js');
+Requirements::javascript('silverstripe/admin:thirdparty/jquery-entwine/dist/jquery.entwine-dist.js');
+```
+
 ## Want to see more like this?
 
 I donate a lot of my time to open-source projects, so if you use this module in a commercial project a small donation to keep me motivated would be much appreciated. If you'd like to sponsor additional development on this module I'd love to hear from you.
