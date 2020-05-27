@@ -49,12 +49,6 @@ Requirements::javascript('silverstripe/admin:thirdparty/jquery/jquery.js');
 Requirements::javascript('silverstripe/admin:thirdparty/jquery-entwine/dist/jquery.entwine-dist.js');
 ```
 
-## Want to see more like this?
-
-I donate a lot of my time to open-source projects, so if you use this module in a commercial project a small donation to keep me motivated would be much appreciated. If you'd like to sponsor additional development on this module I'd love to hear from you.
-
-[<img src="https://www.paypalobjects.com/en_AU/i/btn/btn_donate_LG.gif" alt="Donate">](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Z5HEZREZSKA6A)
-
 ## To Do
 
  - [ ] Translation
@@ -62,4 +56,10 @@ I donate a lot of my time to open-source projects, so if you use this module in 
 
 ## Maintainer contact
 
-[jonathonmenz.com](http://jonathonmenz.com)
+[Jono Menz](https://jonomenz.com)
+
+## Sponsorship
+
+If you want to boost morale of the maintainer you're welcome to make a small monthly donation through [**GitHub**](https://github.com/sponsors/jonom), or a one time donation through [**PayPal**](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Z5HEZREZSKA6A). ❤️ Thank you!
+
+Please also feel free to [get in touch](https://jonomenz.com) if you want to hire the maintainer to develop a new feature, or discuss another opportunity.
