@@ -1,0 +1,7 @@
+ru:
+  TextTargetLength:
+    LengthTarget: "Необходимая длинна: <b>{value}%</b> <i>{remark}</i>"
+    LengthTooShort: "Слишком короткий текст!"
+    LengthTooLong: "Слишком длинный текст!"
+    LengthAdequate: "Хорошо!"
+    LengthIdeal: "Идеально!"
