@@ -1,14 +1,14 @@
-# Text Target Length for SilverStripe CMS
+# Text Target Length for Silverstripe CMS
 
 ![Character limits in action](screenshots/character-count.gif)
 
 If you see a field marked 'Description' you know roughly what type of content to put in there. But how do you know how much of it to write? A single sentence might do, but maybe a paragraph or more is required? A great content plan should recommend an ideal length for every type of content, so content authors and designers alike can make informed decisions.
 
-This module extends the `TextField`, `TextareaField` and ~~`HTMLEditorField`~~ ([#3](https://github.com/jonom/silverstripe-text-target-length/issues/3)) classes in SilverStripe to allow you to set a recommended content length, and set soft upper and lower limits on character count.
+This module extends the `TextField`, `TextareaField` and `HTMLEditorField` classes in Silverstripe to allow you to set a recommended content length, and set soft upper and lower limits on character count.
 
 ## Requirements
 
-SilverStripe 4|5 (3.1+ in previous releases)
+Silverstripe 4|5 (3.1+ in previous releases)
 
 ## Installation
 

@@ -1,11 +1,9 @@
 (function($) {
 	$.entwine('ss.targetlength', function($){
-
 		$('input.target-length, textarea.target-length').entwine({
-
 			updateCount: function() {
 				var field = $(this);
-                var countEl = field.siblings('p.target-length-count').first();
+				var countEl = field.siblings('p.target-length-count').first();
 				if (!countEl) return;
 				var charCount = this.getText().length;
 				if (field.data('previousCount') === charCount) return;
@@ -15,15 +13,15 @@
 				var targetFulfilled = Math.round((charCount / ideal)*20)*5; //5% increments
 				var remark = field.data('hintLengthIdeal');
 				var remarkClass = 'good';
-                if ((charCount >= min && charCount < ((min + ideal) / 2)) || (charCount <= max && charCount > ((max + ideal) / 2))) {
-                    remark = field.data('hintLengthAdequate');
+				if ((charCount >= min && charCount < ((min + ideal) / 2)) || (charCount <= max && charCount > ((max + ideal) / 2))) {
+					remark = field.data('hintLengthAdequate');
 				} else if (charCount < min) {
-    				remark = field.data('hintLengthTooshort');
-                    remarkClass = 'under';
-                    if (charCount === 0) remark = '';
+					remark = field.data('hintLengthTooshort');
+					remarkClass = 'under';
+					if (charCount === 0) remark = '';
 				} else if (charCount > max) {
-    				remark = field.data('hintLengthToolong');
-                    remarkClass = 'over';
+					remark = field.data('hintLengthToolong');
+					remarkClass = 'over';
 				}
 				countEl.attr('class', remarkClass + ' target-length-count');
 				countEl.html(field.data('hintLengthTarget').replace('{value}', targetFulfilled).replace('{remark}', remark));
@@ -32,7 +30,7 @@
 			getText: function() {
 				var field = $(this);
 				if (field.hasClass('htmleditor')) {
-					var editor = tinyMCE.getInstanceById(field.attr('ID'));
+					var editor = tinymce.get(field.attr('ID'));
 					if (editor !== undefined) {
 						return $(editor.getContent()).text();
 					} else {
@@ -46,6 +44,21 @@
 				var field = $(this);
 				field.parent().append('<p class="target-length-count">');
 				this.updateCount();
+				// TinyMCE instances need some extra work
+				if (field.hasClass('htmleditor')) {
+					var editor = tinymce.get(field.attr('ID'));
+					if (editor !== undefined) {
+						function updateCount() {
+							field.updateCount();
+						}
+						editor.on('keyup', updateCount);
+						editor.on('change', updateCount);
+						editor.on('click', updateCount);
+						editor.on('paste', updateCount);
+						editor.on('input', updateCount);
+						editor.on('init', updateCount);
+					}
+				}
 			},
 			onpropertychange: function() {
 				this.updateCount();
