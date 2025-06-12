@@ -8,11 +8,11 @@ This module extends the `TextField`, `TextareaField` and `HTMLEditorField` class
 
 ## Requirements
 
-Silverstripe 4|5 (3.1+ in previous releases)
+Silverstripe 4|5|6 (3.1+ in previous releases)
 
 ## Installation
 
-```composer require jonom/silverstripe-text-target-length```
+`composer require jonom/silverstripe-text-target-length`
 
 [Packagist listing](https://packagist.org/packages/jonom/silverstripe-text-target-length)
 
